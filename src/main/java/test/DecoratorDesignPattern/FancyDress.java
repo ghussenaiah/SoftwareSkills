@@ -12,7 +12,5 @@ public class FancyDress extends DecoratorClass{
 	public void assemble() {
 		super.assemble();
 		System.out.println("FancyDress Features");
-		
 	}
-
 }

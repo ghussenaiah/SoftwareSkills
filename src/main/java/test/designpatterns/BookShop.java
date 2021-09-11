@@ -7,6 +7,10 @@ public class BookShop implements Cloneable {
 	
 	
 	public String shopName;
+	
+	public List<Book> books=new ArrayList<Book>();
+	
+	
 	public String getShopName() {
 		return shopName;
 	}
@@ -19,7 +23,7 @@ public class BookShop implements Cloneable {
 	public void setBooks(List<Book> books) {
 		this.books = books;
 	}
-	public List<Book> books=new ArrayList<Book>();
+	
 	
 	@Override
 	public String toString() {

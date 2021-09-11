@@ -10,7 +10,4 @@ public abstract class Notification {
 	}
 	
 	abstract void sendMessage();
-	
-	
-
 }

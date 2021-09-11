@@ -7,8 +7,4 @@ public class WallSocketImpl implements WallSocket {
 		return new Volts(240);
 	}
 
-	
-	
-	
-
 }

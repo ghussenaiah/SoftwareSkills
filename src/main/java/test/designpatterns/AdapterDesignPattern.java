@@ -10,10 +10,6 @@ public class AdapterDesignPattern {
 		
 		MobileAdapter ma=new MobileAdapterImpl(ws);
 		System.out.println(ma.get3Volts());
-		
-		
-		
-
 	}
 
 }

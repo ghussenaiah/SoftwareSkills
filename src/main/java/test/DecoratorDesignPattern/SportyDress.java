@@ -12,7 +12,5 @@ public class SportyDress extends DecoratorClass{
 	public void assemble() {
 		super.assemble();
 		System.out.println("SportyDress Features");
-		
 	}
-
 }

@@ -4,7 +4,6 @@ public class BridgerPattern {
 
 	public static void main(String[] args) {
 		
-		
 		TextMessage textbyemail=new TextMessage(new Email());
 		textbyemail.sendMessage();
 		
@@ -17,9 +16,6 @@ public class BridgerPattern {
 		
 		QrMessage qrbysms=new QrMessage(new SMS());
 		qrbysms.sendMessage();
-
-
-
 	}
 
 }

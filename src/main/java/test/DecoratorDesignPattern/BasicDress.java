@@ -11,7 +11,4 @@ public class BasicDress implements Dress {
 		System.out.println("Basic Dress Features ");
 		
 	}
-	
-	
-
 }
