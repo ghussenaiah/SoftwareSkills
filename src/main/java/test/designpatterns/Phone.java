@@ -6,7 +6,7 @@ public class Phone {
 	private String processor;
 	private String ram;
 	private String cost;
-	
+
 	public Phone(String os, String screensize, String processor, String ram, String cost) {
 		super();
 		this.os = os;
