@@ -13,7 +13,7 @@ class ReadnWriteFile {
 		// check if File exists or not
 
 		FileWriter fw = new FileWriter("D:\\my\\readfile.txt");
-		fw.append("*******hello wrolrd**************");
+		fw.append("******* hello wolrd **************");
 		fw.close();
 
 		FileReader fr = null;

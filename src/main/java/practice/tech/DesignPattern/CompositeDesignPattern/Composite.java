@@ -1,4 +1,4 @@
-package test.CompositeDesignPattern;
+package practice.tech.DesignPattern.CompositeDesignPattern;
 
 import java.util.ArrayList;
 import java.util.List;
