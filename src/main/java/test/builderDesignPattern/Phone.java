@@ -1,4 +1,4 @@
-package test.designpatterns;
+package test.builderDesignPattern;
 
 public class Phone {
 	private String os;

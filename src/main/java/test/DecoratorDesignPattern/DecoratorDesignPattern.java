@@ -7,7 +7,7 @@ public class DecoratorDesignPattern {
 		Dress Casual = new CasualDress(new BasicDress());
 		Casual.assemble();
 
-		Dress innner = new CasualDress(new SportyDress(new BasicDress()));
+		Dress innner = new  SportyDress(new CasualDress(new BasicDress()));
 		innner.assemble();
 	}
 

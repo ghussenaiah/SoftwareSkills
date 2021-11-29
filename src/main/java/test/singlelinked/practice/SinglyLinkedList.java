@@ -23,7 +23,7 @@ public class SinglyLinkedList {
 		} else {
 
 			Node node = head;
-			while (node != null && node.next != null) {
+			while (node.next != null) {
 				node = node.next;
 			}
 			node.next = newNode;
@@ -43,7 +43,7 @@ public class SinglyLinkedList {
 		System.out.println("Nodes of singly linked list: ");
 		while (current != null) {
 
-			System.out.print(current.data + " ");
+			System.out.print(current.data + " -> ");
 			current = current.next;
 		}
 		System.out.println();

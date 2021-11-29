@@ -1,4 +1,4 @@
-package practice.tech.DesignPattern.CompositeDesignPattern;
+package test.compositeDesignPattern;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,7 @@ class Composite implements Component {
 		components.add(c);
 	}
 
+	@Override
 	public void showprice() {
 
 		System.out.println(name);

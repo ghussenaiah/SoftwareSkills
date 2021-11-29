@@ -1,7 +1,4 @@
 package test.logics;
-
-
-
 public class SingleLinkedReversal {
 
 

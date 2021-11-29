@@ -1,4 +1,4 @@
-package practice.tech.DesignPattern.CompositeDesignPattern;
+package test.compositeDesignPattern;
 
 public class Leaf implements Component {
 
