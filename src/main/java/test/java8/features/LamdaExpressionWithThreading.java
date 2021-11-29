@@ -30,6 +30,6 @@ public class LamdaExpressionWithThreading {
 }
 
 
-*Runnable interface bydefaul haivng only one abstract method ...that we can convert to *lamda expression*
+/*Runnable interface bydefaul haivng only one abstract method ...that we can convert to *lamda expression*
 remvoing extended class name and using directly funtional interface name 
 Runnable lt in the above program*/
