@@ -39,6 +39,11 @@ class Student {
  */
  
 public class ComparatorUsingStudentObj {
+	
+	
+	void test() {
+		System.out.println("Heloo");
+	}
 
 	public static void main(String args[]) {
 
@@ -62,9 +67,8 @@ public class ComparatorUsingStudentObj {
 		Comparator<Student> ename = (arg0, arg1) -> arg0.ename.compareTo(arg1.ename);
 		Collections.sort(slist, ename);
 		System.out.println(slist);
-
+		
 	}
-
 }
 
 
