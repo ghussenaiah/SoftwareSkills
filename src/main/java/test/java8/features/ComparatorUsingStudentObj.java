@@ -8,6 +8,7 @@ import java.util.List;
 class Student {
 	String ename;
 	int eno;
+	public int marks;
 
 	public Student(String ename, int eno) {
 		super();
