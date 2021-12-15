@@ -1,3 +1,4 @@
+
 package test.java8.features;
 
 public class ThreadDeadlock {
@@ -37,7 +38,7 @@ class SyncThread implements Runnable {
 		synchronized (obj1) {
 			System.out.println(name + " acquired lock on " + obj1);
 			work();
-			// this is beta branch 
+			// this is master branch 
 			System.out.println(name + " acquiring lock on " + obj2);
 			synchronized (obj2) {
 				System.out.println(name + " acquired lock on " + obj2);
@@ -47,7 +48,7 @@ class SyncThread implements Runnable {
 		}
 		System.out.println(name + " released lock on " + obj1);
 		System.out.println(name + " finished execution.");
-		// this line check in beta branch
+		// this line check in master branch
 	}
 
 	private void work() {
