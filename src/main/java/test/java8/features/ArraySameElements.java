@@ -15,7 +15,7 @@ public class ArraySameElements {
 		System.out.println(sameElements(a1, a2));
 		System.out.println(sameElements(a1, a3));
 		LinkedList<Integer> ll1 = new LinkedList<>();
-		// this master brach changes 
+		// this beta brach changes 
 
 	}
 
@@ -30,7 +30,7 @@ public class ArraySameElements {
 			// element not present in both?
 			if (!uniqueElements2.contains(obj)) return false;
 		}
-		// this is master brach return statement 
+		// this is beta brach return statement 
 		return true;
 	}
 }

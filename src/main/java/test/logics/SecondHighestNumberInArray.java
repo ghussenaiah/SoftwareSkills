@@ -10,7 +10,7 @@ public static void main(String[] args)
         for (int i = 0; i < arr.length; i++)
         {
             System.out.print(arr[i] + "\t");
-            // this is master branch changes 
+            // this is beta branch changes 
         }
         for (int i = 0; i < arr.length; i++)
         {
@@ -25,7 +25,7 @@ public static void main(String[] args)
             }
         }
         System.out.println("\nSecond largest number is:" + secondLargest);
-        // here also master branch changes pls note that
+        // here also beta branch changes pls note that
         System.out.println("Largest Number is: "  +largest);
     }
 }
