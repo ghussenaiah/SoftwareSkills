@@ -1,9 +1,11 @@
 package test.arrays;
 
-
+import java.util.Random;
 
 public class Print2DArray {
 	   public static void main(String[] args) {
+		   
+		   
 	      final int[][] matrix = {
 	         { 1, 2, 3 },
 	         { 4, 5, 6 },
@@ -15,8 +17,17 @@ public class Print2DArray {
 	         }
 	         System.out.println(); //change line on console as row comes to end in the matrix.
 	      }
+	      
+	      Random r=new Random();
+	      r.doubles(100, 300);
+	      System.out.println(""+r.nextInt());
+	    	   
+	  
 	   }
+      
 	}
+
+
 
 
 
