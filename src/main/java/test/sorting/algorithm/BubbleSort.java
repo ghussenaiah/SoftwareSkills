@@ -18,11 +18,9 @@ public class BubbleSort {
 				// have struggled for j++ or = ++j keep on incrementing so got confusion with
 				// increment
 				// we can compare by a[j-1]>a[j] like this
-
 				temp = a[j];
 				k = j + 1;
 				if (a[j] > a[k]) {
-
 					a[j] = a[k];
 					a[k] = temp;
 
