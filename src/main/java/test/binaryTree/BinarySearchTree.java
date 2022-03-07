@@ -39,6 +39,30 @@ class BinarySearchTree {
 	void insert(int key) {
 		root = insertRec(root, key);
 	}
+	
+	static int max_level = 0;
+	 void leftViewUtil(Node node, int level)
+	    {
+	        // Base Case
+	        if (node == null)
+	            return;
+	 
+	        // If this is the first node of its level
+	        if (max_level < level) {
+	            System.out.print(" " + node.key);
+	            max_level = level;
+	        }
+	 
+	        // Recur for left and right subtrees
+	        leftViewUtil(node.left, level + 1);
+	        leftViewUtil(node.right, level + 1);
+	    }
+	 
+	    // A wrapper over leftViewUtil()
+	    void leftView()
+	    {
+	        leftViewUtil(root, 1);
+	    }
 
 	/*
 	 * A recursive function to insert a new key in BST
@@ -98,7 +122,8 @@ class BinarySearchTree {
      tree.insert(80);
 
      // print inorder traversal of the BST
-     tree.inorder();
+    // tree.inorder();
+     tree.leftView();
  }
 }
 //This code is contributed by Ankur Narain Verma

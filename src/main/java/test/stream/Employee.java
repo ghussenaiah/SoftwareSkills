@@ -85,6 +85,8 @@ public class Employee {
 		System.out.println("return single obejct from the filter ");
 		Employee result2 = elist.stream().filter(x -> "cc".equals(x.geteName())).findAny().orElse(null);
 		
+	
+		
 		
 	    
 	    

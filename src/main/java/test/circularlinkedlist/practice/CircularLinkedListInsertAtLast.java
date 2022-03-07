@@ -78,6 +78,7 @@ public void insertAtFirst(int data) {
 				break;
 			}
 		}while (current.right != null );
+		
 		System.out.println();
 	} 
 	
