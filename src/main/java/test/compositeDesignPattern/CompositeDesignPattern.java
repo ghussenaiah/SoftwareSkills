@@ -3,6 +3,14 @@ package test.compositeDesignPattern;
 public class CompositeDesignPattern {
 
 	public static void main(String[] args) {
+		
+		
+		// Here Component interface is implemented by two classes parent(Composite) and child (leaf)
+		// show method is present in both classes 
+		// while we iterating the loop depends on instance type it will call parent or child class show method 
+		// 	Component Monitor = new Leaf(); child class instance 
+		// Composite per = new Composite(); parent class instance 
+	
 
 		Component Monitor = new Leaf("Monitor", "4000");
 		Component Mouse = new Leaf("Mouse", "1000");

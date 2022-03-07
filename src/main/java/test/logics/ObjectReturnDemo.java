@@ -4,7 +4,9 @@ class ObjectReturnDemo {
 
     int a;
 
-    ObjectReturnDemo(int i) { a = i; }
+    ObjectReturnDemo(int i) { 
+    	a = i; 
+    }
 	
 	
 
@@ -16,12 +18,6 @@ class ObjectReturnDemo {
 		return temp;
 
 	}
-
-
-
- 
-
-    // Main driver method
 
     public static void main(String args[])
 

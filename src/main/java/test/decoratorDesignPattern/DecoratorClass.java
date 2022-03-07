@@ -7,6 +7,7 @@ public class DecoratorClass  implements Dress{
 	public DecoratorClass(Dress dress) {
 		super();
 		this.dress = dress;
+		System.out.println("intialifrom DecoratorClass dress");
 	}
 
 	public void assemble() {

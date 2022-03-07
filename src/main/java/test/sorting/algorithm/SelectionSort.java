@@ -4,11 +4,10 @@ public class SelectionSort {
 
 	public static void main(String args[]) {
 
-		int a[] = { 9, 7 ,4,0,2 ,15};
+		int a[] = { 9, 7, 4, 0, 2, 15 };
 		int n = a.length;
 		int min;
-		int k=0;
-		
+
 		for (int i = 0; i < n; i++) {
 
 			min = a[i];
@@ -18,18 +17,15 @@ public class SelectionSort {
 				if (min > a[j]) {
 
 					a[i] = a[j];
-					a[j]=min;
-				    min = a[i];
+					a[j] = min;
+					min = a[i];
 				}
 			}
 
 		}
-
-		
 		for (int i = 0; i < n; i++) {
 			System.out.println("new array   => " + a[i]);
 		}
-		 
 
 	}
 }

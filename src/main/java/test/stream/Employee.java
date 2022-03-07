@@ -44,7 +44,7 @@ public class Employee {
 
 	
 	
-	public static void main(String args[]) {
+	public static void main(String args[]) throws ClassNotFoundException {
 		
 		
 		List<Employee> elist=new ArrayList<Employee>();
@@ -82,6 +82,10 @@ public class Employee {
 		// to pring avg valus of ages
 		System.out.println(elist.stream().collect(Collectors.averagingDouble(e -> e.eAge)));
 	     
+		System.out.println("return single obejct from the filter ");
+		Employee result2 = elist.stream().filter(x -> "cc".equals(x.geteName())).findAny().orElse(null);
+		
+		
 	    
 	    
 	    

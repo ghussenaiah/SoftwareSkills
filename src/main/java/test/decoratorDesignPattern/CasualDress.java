@@ -3,7 +3,9 @@ package test.decoratorDesignPattern;
 public class CasualDress extends DecoratorClass{
 
 	public CasualDress(Dress dress) {
+		
 		super(dress);
+		
 	}
 	@Override
 	public void assemble() {

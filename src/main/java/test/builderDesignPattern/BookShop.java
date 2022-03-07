@@ -17,6 +17,10 @@ public class BookShop implements Cloneable {
 	public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
+	public BookShop() {
+		super();
+		System.out.println("object got created ");
+	}
 	public List<Book> getBooks() {
 		return books;
 	}
@@ -25,10 +29,10 @@ public class BookShop implements Cloneable {
 	}
 	
 	
-	@Override
-	public String toString() {
-		return "BookShop [shopName=" + shopName + ", books=" + books + "]";
-	}
+	/*
+	 * @Override public String toString() { return "BookShop [shopName=" + shopName
+	 * + ", books=" + books + "]"; }
+	 */
 	
 	public void fetchData()
 	{

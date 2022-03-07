@@ -7,21 +7,28 @@ package test.binaryTree;
 //search tree
 class BinarySearchTree {
 
+	
+	
+	Node root;
+	
+	
  /* Class containing left
     and right child of current node
   * and key value*/
 	class Node {
 		int key;
-		Node left, right;
+		Node left;
+		Node right;
 
 		public Node(int item) {
 			key = item;
-			left = right = null;
+			left = null;
+			right = null;
 		}
 	}
 
 	// Root of BST
-	Node root;
+	
 
 	// Constructor
 	BinarySearchTree() {
