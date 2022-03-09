@@ -75,8 +75,8 @@ public class BstMinimumValue {
 	
 	public int minimunvaue(Node root) {
 		Node current = root;
-		while (current.right != null) {
-			current = current.right;
+		while (current.left != null) {
+			current = current.left;
 		}
 		return (current.key);
 	}

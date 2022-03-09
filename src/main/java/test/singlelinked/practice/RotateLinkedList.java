@@ -1,5 +1,5 @@
-package test.logics;
-public class SingleLinkedReversal {
+package test.singlelinked.practice;
+public class RotateLinkedList {
 
 
   Node head = null;  
@@ -79,7 +79,7 @@ public class SingleLinkedReversal {
       
 	public static void main(String[] args) {
 
-		SingleLinkedReversal sList = new SingleLinkedReversal();
+		RotateLinkedList sList = new RotateLinkedList();
 
 		sList.addNode(1);
 		sList.addNode(2);
