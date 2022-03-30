@@ -1,7 +1,11 @@
 package test.stream;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Employee {
@@ -44,6 +48,24 @@ public class Employee {
 
 	
 	
+	@Override
+	public int hashCode() {
+		return Objects.hash(eAge, eId, eName, eSalary);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return Objects.equals(eAge, other.eAge) && Objects.equals(eId, other.eId) && Objects.equals(eName, other.eName)
+				&& Objects.equals(eSalary, other.eSalary);
+	}
+	
+	
 	public static void main(String args[]) throws ClassNotFoundException {
 		
 		
@@ -71,7 +93,13 @@ public class Employee {
 
 		System.out.println("sort employee objects using numer field");
 		elist.stream().sorted((a, b) -> a.geteAge().compareTo(b.geteAge())).collect(Collectors.toList())
-				.forEach(e -> System.out.println(e.eName));
+				.forEach(e -> System.out.println(e.eAge));
+		
+		elist.stream().sorted((a, b) -> b.geteAge().compareTo(a.geteAge())).collect(Collectors.toList()).forEach(e -> System.out.println(e.eAge));
+		
+		System.out.println(elist.stream().sorted((a, b) -> a.geteAge().compareTo(b.geteAge())).skip(1).findFirst().get().eAge);
+		
+		
 
 		System.out.println("sort employee objects using string field");
 		elist.stream().sorted((a, b) -> a.geteName().compareTo(b.geteName())).collect(Collectors.toList())
@@ -83,7 +111,26 @@ public class Employee {
 		System.out.println(elist.stream().collect(Collectors.averagingDouble(e -> e.eAge)));
 	     
 		System.out.println("return single obejct from the filter ");
+		
 		Employee result2 = elist.stream().filter(x -> "cc".equals(x.geteName())).findAny().orElse(null);
+		
+		List<Integer> list = Arrays.asList(10, 4, 2, 6, 5, 8);
+
+		list = list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+
+		System.out.println(list.stream().sorted(Comparator.reverseOrder()).skip(2).findFirst());
+
+		System.out.println(list);
+
+		list = list.stream().sorted().collect(Collectors.toList());
+
+		System.out.println(list);
+		
+		
+
+		Optional<Employee> m=elist.stream().sorted((s1, s2) -> s2.geteAge().compareTo(s1.geteAge())).skip(2).findFirst();
+		System.out.println(m.get().eAge);
+		
 		
 	
 		

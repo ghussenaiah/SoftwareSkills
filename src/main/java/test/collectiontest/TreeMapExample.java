@@ -3,8 +3,12 @@
  */
 package test.collectiontest;
 
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
+
+import test.stream.Employee;
 
 /**
  * @author husenaiah
@@ -41,6 +45,30 @@ public class TreeMapExample {
 		for (Map.Entry<String, String> m : tree.entrySet()) {
 			System.out.println(m.getKey() + " " + m.getValue());
 		} 
+		
+		
+		
+		
+		Set<Employee> abc=new HashSet<Employee>();
+		
+		Employee e1=new Employee(1,"test",1,400);
+		Employee e2=new Employee(1,"test1",1,400);
+		Employee e3=new Employee(1,"test",1,400);
+		
+		abc.add(e1);
+		abc.add(e2);
+		abc.add(e3);
+		System.out.println(abc.size());
+		
+		for (Employee m : abc) {
+			System.out.println(m.geteName());
+		} 
+				
+			
+		
+		
+		
+		
 	}
 
 }
